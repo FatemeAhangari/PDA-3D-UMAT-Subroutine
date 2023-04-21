@@ -34,7 +34,6 @@ When $\sigma_{22} + \sigma_{33} > 0$
 $$F_m = \Big(\frac{\sigma_{22}}{Y_T}\Big)^2 + \Big(\frac{\sigma_{12}}{S_C}\Big)^2$$
 
 ### Matrix Failure in Compression
-When $\sigma_{22} + \sigma_{33} < 0$
 $$F_m = \Big(\frac{\sigma_{22}}{S_C}\Big)^2 + \Bigl[  \Bigl(\frac{Y_C}{2S_C}\Bigr)^2  - 1 \Bigr] \Big(\frac{\sigma_{22}}{Y_C}\Big) +  \Big(\frac{\sigma_{12}}{S_C}\Big)^2$$
 
 ### Fiber-Matrix shear
