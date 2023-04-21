@@ -1,5 +1,6 @@
 # PDA-2D-UMAT-Subroutine
 Progressive Damage Analysis (Modified Yamada-Sun / Hashin)
+
 A progressive damage analysis based characteristic length method (PDA-based CLM) with only unidirectional layer properties required is proposed to predict the failure of notched composite. Two progressive damage models (PDMs), Hashin or modified Yamada–Sun criterion and Camanho’s degradation rules are recommended. The following is a UMAT subroutine for both Hashin and Modified Yamada-Sun failure criterion in Abaqus.
 # Hashin criteria
 In Abaqus, the Hashin failure criterion is available only to shell and continuum shell elements. Therefore this UMAT subroutine has been written, which can be used for continuum solid elements. The equations for the different failure modes are given below.
