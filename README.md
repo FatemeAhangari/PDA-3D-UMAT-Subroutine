@@ -64,8 +64,9 @@ The following properties need to be entered in the following order.
   * Transverse Shear Strength $S_{23}$
 # Output Visualization
  
-There are five solution-dependent state variables. They are as follows
+There are five solution-dependent state variables For each failure mode. They are as follows
   * SDV1 : Fiber Failure in Tension
   * SDV2 : Fiber Failure in Compression
   * SDV3 : Matrix Failure in Tension
   * SDV4 : Matrix Failure in Compression
+  * SDV5 : Fiber-Matrix shear (Only for Modified Yamada-Sun Criteria)
