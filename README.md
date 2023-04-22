@@ -1,7 +1,13 @@
 # PDA-2D-UMAT-Subroutine
 Progressive Damage Analysis (Modified Yamada-Sun / Hashin)
 
-A progressive damage analysis with only unidirectional layer properties required is proposed to predict the failure of notched composite. Two progressive damage models (PDMs), Hashin or modified Yamada–Sun criterion and Camanho’s degradation rules are recommended. The following is a UMAT subroutine for both Hashin and Modified Yamada-Sun failure criterion in Abaqus.
+A progressive damage analysis with only unidirectional layer properties required is proposed to predict the failure of notched composite. Two progressive damage models (PDMs), Hashin or modified Yamada–Sun criterion and Camanho’s degradation rules are recommended. The following is a UMAT subroutine for both Hashin and Modified Yamada-Sun failure criterion in Abaqus. 
+
+# Model definition
+
+The model was made of carbon/epoxy composites X850 with commonly-used balanced symmetric stacking sequence of [45/0/-45/0/90/0/45/0/-45/0]s. One-ply thickness is 0.185 mm.
+<img src="Images/Ply2_Ansys.png" width="400">
+
 # Hashin criteria
 In Abaqus, the Hashin failure criterion is available only to shell and continuum shell elements. Therefore this UMAT subroutine has been written, which can be used for continuum solid elements. The equations for the different failure modes are given below.
 ### Fiber Failure in Tension
@@ -65,8 +71,8 @@ The following properties need to be entered in the following order.
 # Output Visualization
  
 There are five solution-dependent state variables For each failure mode. They are as follows
-  * SDV1 : Fiber Failure in Tension
-  * SDV2 : Fiber Failure in Compression
-  * SDV3 : Matrix Failure in Tension
-  * SDV4 : Matrix Failure in Compression
-  * SDV5 : Fiber-Matrix shear (Only for Modified Yamada-Sun Criteria)
+  * SDV9 : Fiber Failure in Tension
+  * SDV10 : Fiber Failure in Compression
+  * SDV11 : Matrix Failure in Tension
+  * SDV12 : Matrix Failure in Compression
+  * SDV13 : Fiber-Matrix shear (Only for Modified Yamada-Sun Criteria)
